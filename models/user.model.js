@@ -1,6 +1,10 @@
 const users = [{
     email: "profe@coderhouse.com",
-    password: "admin"
+    password: "admin",
+},
+{
+    email: "tutor@coderhouse.com",
+    password: "tutor"
 }]
 
 module.exports = users
