@@ -1,6 +1,8 @@
+const users = require('../models/user.model')
+
 const login = (email, password) => {
-    if (email !== 'profe@coderhouse.com') return false
-    if (password !== 'admin') return false
+    const user = users.find(user => user.email === email)
+    if (!user || user.password!==password) return false
     return true
 }
 
